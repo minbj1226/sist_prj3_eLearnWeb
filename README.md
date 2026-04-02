@@ -93,24 +93,3 @@ DevOps & Tools
 * 해결 방법: 6인 팀 프로젝트의 원활한 통합을 위해 명확한 GitHub 브랜치 전략(Branching Strategy) 수립. 엄격한 디렉터리 구조 및 명명 규칙을 사전에 정의하고, Notion을 통해 자체 제작한 '외부 경로 매핑', 'DB 외래키 에러 대응 가이드'를 배포하여 팀 전체의 생산성 상향 평준화에 기여함.
 
 <br/>
-
-## ⚙️ 시작하기 (Getting Started)
-
-### Prerequisites
-* Java 17 (or 1.8+)
-* Oracle DB 11g 이상
-* Maven
-
-### Installation
-```bash
-# 1. Repository 클론
-$ git clone [https://github.com/](https://github.com/)[사용자계정]/IntLearn.git
-
-# 2. application.properties 설정 (DB 계정 및 외부 파일 업로드 경로 수정)
-spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-spring.datasource.username=YOUR_USERNAME
-spring.datasource.password=YOUR_PASSWORD
-file.upload.dir=/your/custom/path/
-
-# 3. 프로젝트 빌드 및 실행
-$ ./mvnw spring-boot:run
